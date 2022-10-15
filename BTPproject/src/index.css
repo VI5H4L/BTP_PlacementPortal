@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: #F7F9FB;
+    /* background-color: gray; */
+}
+
+nav{
+    z-index: 10;
+}
+
+
+html{
+    overflow: hidden;
+}
