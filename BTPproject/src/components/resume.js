@@ -22,7 +22,7 @@ const resume = () => {
     <p style={{fontFamily:'Montserrat',fontSize:'1.4em'}}>SAVED RESUMES</p>
     <div style={{display:'flex',flexDirection:'column',padding:'10px',gap:'1.5em'}}>
         <div style={{ background:'#E9F0F8',width:'23em',height: '5em',orderradius: '.4em'}}><span style={{padding:'2em',fontSize:'1.4em'}}>Resume Final Draft</span></div>
-        <div style={{ background:'#E9F0F8',width:'23em',height: '5em',orderradius: '.4em'}}><span style={{padding:'2em',fontSize:'1.4em'}}>Resume Seconnd Draft</span></div>
+        <div style={{ background:'#E9F0F8',width:'23em',height: '5em',orderradius: '.4em'}}><span style={{padding:'2em',fontSize:'1.4em'}}>Resume Second Draft</span></div>
         <div style={{ background:'#E9F0F8',width:'23em',height: '5em',orderradius: '.4em'}}><span style={{padding:'2em',fontSize:'1.4em'}}>Resume First Draft</span></div>
     </div>
 
