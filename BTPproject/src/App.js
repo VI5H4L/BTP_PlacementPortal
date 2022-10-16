@@ -7,9 +7,10 @@ import ResumeAnalyser from './components/resumeanalyser'
 import Studentanalysis from './components/studentanalys';
 
 import Jobs from "./components/Jobs"
+import Noticesmain from "./components/Noticesmain";
 
 import Navbar from "./components/Navbar"
-// import Search from "./components/Search"
+import Search from "./components/Search"
 import SideMenu from "./components/SideMenu"
 import { useState } from "react";
 
@@ -46,6 +47,7 @@ export default function App(){
                 <Route  path="/profile" element={
                     <>
                         <Navbar setIsMenuActive={check} />
+                        <Search searchCount={2000} isSearchActive={true} />
                     </>
                 } />
                 <Route  path="/resume" element={
@@ -78,7 +80,12 @@ export default function App(){
                         <Jobs />
                     </>
                 } />
-                <Route   path="notices" element={<Navbar setIsMenuActive={check} />} />
+                <Route  path="notices" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                        <Noticesmain />
+                    </>
+                } />
             </Routes> 
             <br />
             

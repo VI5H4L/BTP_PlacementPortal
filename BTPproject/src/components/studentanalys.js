@@ -1,7 +1,7 @@
 import React from 'react'
 import student from './studentanalys.module.css'
 const studentanalys = () => {
-    document.body.style.backgroundColor = "#E5E5E5"
+    document.body.style.backgroundColor = "#F7F9FB"
   return (
     <div className={student.main}>
      

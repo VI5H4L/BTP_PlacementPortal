@@ -2,7 +2,6 @@ import React from 'react'
 import img from './assets/img.png'
 import img2 from './assets/img2.png'
 const resumeanalyser = () => {
-  document.body.style.backgroundColor = "#E5E5E5"
   return (
     
       
