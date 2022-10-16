@@ -17,6 +17,7 @@
 }
 .heading{
     font-size: 1.7em;
+    font-family: "Montserrat";
 }
 .div2{
     display: flex;
@@ -25,7 +26,7 @@
 }
 .div1p1{
     font-size: 1.5em;
-  width: 32em;
+  width: 34em;
   height: 8em;  
   padding: 1em;
   margin-top: 1em;
