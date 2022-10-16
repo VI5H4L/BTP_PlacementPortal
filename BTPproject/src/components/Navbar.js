@@ -24,7 +24,7 @@ export default function Navbar(props){
             <NavLink logoName="notices" linkName="NOTICES"/>
             <NavSearch />
             <Link className={NavbarCSS.links} to={"/profile"}>
-                <NavCandidate candidateName="MAYANK VYAS" candidatepic="mayankvyas" />
+                <NavCandidate candidateName="VISHAL KUMAR" candidatepic="mayankvyas" />
             </Link>
             <div ref={menu} id="Menu" onClick={handleClick}><NavLink logoName="menu" linkName="MENU"/></div>
         </nav>
