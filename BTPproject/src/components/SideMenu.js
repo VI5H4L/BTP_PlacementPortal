@@ -20,7 +20,10 @@ export default function SideMenu(props){
                             </div>
                         
                         <div className={SideMenuCSS.mid3_div} >
-                            <SliderBtn picName="side2" text="STUDENT ASSESSMENT" />
+                            <Link className={SideMenuCSS.links} to={"/student_assessment"}>
+                                <SliderBtn picName="side2" text="STUDENT ASSESSMENT" />
+                            </Link>
+                            
                         </div>
                     </div>
 

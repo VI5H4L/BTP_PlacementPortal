@@ -2,8 +2,14 @@ import  './App.module.css';
 import Landingpage from "./components/Landingpage.js";
 import Login from "./components/Login";
 
+import Resume from './components/resume';
+import ResumeAnalyser from './components/resumeanalyser'
+import Studentanalysis from './components/studentanalys';
+
+import Jobs from "./components/Jobs"
+
 import Navbar from "./components/Navbar"
-import Search from "./components/Search"
+// import Search from "./components/Search"
 import SideMenu from "./components/SideMenu"
 import { useState } from "react";
 
@@ -45,12 +51,19 @@ export default function App(){
                 <Route  path="/resume" element={
                     <>
                         <Navbar setIsMenuActive={check} />
-                        <Search searchCount={2000} isSearchActive={true} />
+                        <Resume />
                     </>
                 } />
                 <Route  path="/resume_analyzer" element={
                     <>
                         <Navbar setIsMenuActive={check} />
+                        <ResumeAnalyser />
+                    </>
+                } />
+                <Route  path="/student_assessment" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                        <Studentanalysis />
                     </>
                 } />
                 <Route  path="feed" element={
@@ -59,7 +72,12 @@ export default function App(){
                         <Landingpage />
                     </>
                 } />
-                <Route  path="jobs" element={<Navbar setIsMenuActive={check} />} />
+                <Route  path="jobs" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                        <Jobs />
+                    </>
+                } />
                 <Route   path="notices" element={<Navbar setIsMenuActive={check} />} />
             </Routes> 
             <br />

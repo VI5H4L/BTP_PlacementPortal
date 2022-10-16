@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    transition: all 0.4s ease-in-out 0.01s;
 }
 
 body{
     background-color: #F7F9FB;
-    /* background-color: gray; */
 }
 
 nav{
