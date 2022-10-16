@@ -42,6 +42,17 @@ export default function App(){
                         <Navbar setIsMenuActive={check} />
                     </>
                 } />
+                <Route  path="/resume" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                        <Search searchCount={2000} isSearchActive={true} />
+                    </>
+                } />
+                <Route  path="/resume_analyzer" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                    </>
+                } />
                 <Route  path="feed" element={
                     <>
                         <Navbar setIsMenuActive={check} />

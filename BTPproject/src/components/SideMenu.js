@@ -1,6 +1,7 @@
 import SideMenuCSS from "./SideMenu.module.css"
 import SliderBtn from "./SliderBtn";
 import ResumeBtn from "./ResumeBtn";
+import { Link } from "react-router-dom";
 
 export default function SideMenu(props){
     return (
@@ -11,9 +12,13 @@ export default function SideMenu(props){
             <div className={SideMenuCSS.mid_div} >
                 <div className={SideMenuCSS.mid1_div} >
                     <div className={SideMenuCSS.mid2_div} >
-                        <div className={SideMenuCSS.mid3_div} >
-                            <SliderBtn picName="side1" text="PROFILE" />
-                        </div>
+                        
+                            <div className={SideMenuCSS.mid3_div} >
+                                <Link className={SideMenuCSS.links} to={"/profile"}>
+                                    <SliderBtn picName="side1" text="PROFILE" />
+                                </Link>
+                            </div>
+                        
                         <div className={SideMenuCSS.mid3_div} >
                             <SliderBtn picName="side2" text="STUDENT ASSESSMENT" />
                         </div>
@@ -31,8 +36,13 @@ export default function SideMenu(props){
             </div>
             <div className={SideMenuCSS.last_div} >
                 <p className={SideMenuCSS.resume_heading}>Resume</p>
-                <ResumeBtn upperText="Upload Resume" lowerText="Send to Server" />
-                <ResumeBtn upperText="Resume analysis" lowerText="Get checked your Resume" />
+                <Link className={SideMenuCSS.links} to={"/resume"}>
+                    <ResumeBtn upperText="Upload Resume" lowerText="Send to Server" />
+                </Link>
+                <Link className={SideMenuCSS.links} to={"/resume_analyzer"}>
+                    <ResumeBtn upperText="Resume analysis" lowerText="Get checked your Resume" />
+                </Link>
+                
             </div>
             <div className={SideMenuCSS.logout_div} >
                 <p className={SideMenuCSS.logout}>LOG OUT</p>
