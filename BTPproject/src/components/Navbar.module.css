@@ -26,3 +26,7 @@ h1{
     width: 90px;
     height:41px;
 }
+
+.links{
+    text-decoration: none;
+}

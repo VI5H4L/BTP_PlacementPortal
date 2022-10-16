@@ -37,6 +37,11 @@ export default function App(){
                         <Login />
                     </>
                 } />
+                <Route  path="/profile" element={
+                    <>
+                        <Navbar setIsMenuActive={check} />
+                    </>
+                } />
                 <Route  path="feed" element={
                     <>
                         <Navbar setIsMenuActive={check} />
